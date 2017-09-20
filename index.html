@@ -21,14 +21,22 @@
             <li>or companies</li>
             <li>Sign-in</li>
           </ul>
-          <ul class="mobile">
-            <li>Menu</li>
-          </ul>
         </div>
       </nav>
+      <nav class="mobile">
+          <ul>
+            <li><a href="#"><img src="./resources/images/ic-logo.svg"></a></li>
+            <li><a href="#"><img src="./resources/images/ic-on-campus.svg"></a></li>
+            <li><a href="#"><img src="./resources/images/ic-online.svg"></a></li>
+            <li><a href="#"><img src="./resources/images/ic-login.svg"></a></li>
+          </ul>
+      </nav>
+
+
+
     </header>
 <!-- sign-up-section -->
-    <div class="flex-container">
+
       <div class="sign-up">
         <div class="banner">
           <img src="./resources/images/banner.jpg">
@@ -55,6 +63,9 @@
               <div class="image">
                 <img src="./resources/images/information-orientation.jpg">
               </div>
+              <div class="mobile-image">
+                <img src="./resources/images/information-orientation-mobile.jpg">
+              </div>
               <div class="description">
                 <h2>Orientation date</h2>
                 <span>Tue 10/11 & Wed 10/12: 8am-3pm</span>
@@ -64,6 +75,9 @@
           <div class="article">
             <div class="image">
               <img src="./resources/images/information-campus.jpg">
+            </div>
+            <div class="mobile-image">
+              <img src="./resources/images/information-campus-mobile.jpg">
             </div>
             <div class="description">
               <h2>Our campus</h2>
@@ -75,6 +89,9 @@
             <div class="image">
               <img src="./resources/images/information-guest-lecture.jpg">
             </div>
+            <div class="mobile-image">
+              <img src="./resources/images/information-guest-lecture-mobile.jpg">
+            </div>
             <div class="description">
               <h2>Orientation date</h2>
               <span>Join a keynote with Oliver Sack about music in medical treatment</span>
@@ -83,7 +100,7 @@
           </div>
         </div>
       </div>
-    </div>
+
 <!-- Course Section -->
       <div class="course-catalogue">
         <h1>Start Learning</h1>
@@ -151,8 +168,9 @@
       </div>
     </div>
 <!-- Thesis Section -->
+    <h1 class="features-headline">Thesis exhibit</h1>
     <div class="features-section">
-      <div class="left-feature">
+      <div class="left-feature-thesis">
         <video class="videobox" controls>
         <source src="./resources/videos/thesis.mp4" type="video/mp4">
         </video>
@@ -160,7 +178,7 @@
         <span class="quote">Curabitur vitae libero in ipsum porttitor consequat. Aliuam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula.""</span>
 
       </div>
-      <div class="articles">
+      <div class="articles" id="thesis">
         <div class="article" id="guest">
             <div class="image">
               <img src="./resources/images/thesis-fisma.jpg">
