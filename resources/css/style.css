@@ -6,7 +6,9 @@ html {
 
 body {
   line-height: 1.4rem;
-  margin: auto;
+  margin: 0 auto;
+  max-width: 1080px;
+
 }
 
 .flex-container {
@@ -17,6 +19,7 @@ body {
 
 h1 {
   font-size: 2rem;
+
 }
 
 /* Header Section */
@@ -34,16 +37,20 @@ nav {
   align-items: center;
   justify-content: space-between;
   height: 4rem;
+  max-width: 1080px;
+  
 }
 
 nav .logo {
   display: flex;
   align-items: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 nav .logo .academy {
   color: grey;
+  font-weight: normal;
 }
 
 nav img {
@@ -62,8 +69,9 @@ header nav ul {
   display: flex;
 }
 
-nav li {
+nav li a {
   padding-left: 1rem;
+  font-size: 1.25rem;
 }
 
 header .mobile {
@@ -105,10 +113,19 @@ header .mobile {
 
 /* Sign UP Section */
 
+.main-container {
+  max-width: 1080px;
+  margin: auto;
+  position: relative;
+  top: 4rem;
+
+}
+
 .sign-up {
   display: flex;
   justify-content:flex-start;
   background-color: lightgrey;
+
 
 }
 
@@ -136,22 +153,23 @@ header .mobile {
   background-color: grey;
   text-align: center;
   color: white;
-  font-size: 2rem;
+  font-size: 1.2rem;
 }
 
 .content {
   margin: auto;
-  width: 28rem;
+  width: 22rem;
 }
 
 .content h1 {
-  font-size: 3.7rem;
+  font-size: 2.5rem;
   line-height: 1;
   padding-bottom: 1.5rem;
+  font-weight: bold;
 }
 
 .content span {
-  font-size: 2rem;
+  font-size: 1.2rem;
   line-height: 1;
 }
 
@@ -204,6 +222,7 @@ header .mobile {
   line-height: 1;
   padding-top: 2rem;
   padding-bottom: 1.5rem;
+  font-weight: bold;
 }
 
 .left-feature img {
@@ -229,6 +248,12 @@ header .mobile {
 .left-feature .source {
   padding-top: 2rem;
   padding-bottom: 2rem;
+  font-size: 0.75rem;
+  font-weight: 300;
+}
+
+.left-feature .quote {
+  font-size: 1rem;
 }
 
 .image {
@@ -254,16 +279,22 @@ header .mobile {
 }
 
 .description h2 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   padding-bottom: 0.5rem;
+  font-weight: 500;
 }
 
 .description span {
   padding-bottom: 0.5rem;
+  font-weight: 300;
 }
 
 .description a {
   color: blue;
+}
+
+.article .mobile-image {
+  display: none;
 }
 
 @media only screen and (max-width: 760px) {
@@ -280,9 +311,9 @@ header .mobile {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    padding-left: 1rem;
-    padding-right: 1rem;
+
     max-width: 100%;
+    border: none;
   }
 
   .article .image {
@@ -322,10 +353,12 @@ header .mobile {
 
 .course-catalogue h1 {
   padding-top: 2rem;
+  font-weight: bold;
 }
 
 .course-catalogue span {
   font-size: 1rem;
+  font-weight: 300;
 }
 
 .courses {
@@ -337,7 +370,6 @@ header .mobile {
 
 .course {
   background-color: white;
-
   flex: 1;
   margin: 2rem 1rem 1rem 1rem;
   min-width: 30%;
@@ -369,13 +401,18 @@ header .mobile {
 .course-content {
   padding: 1rem 1rem 1rem 1rem;
   background-color: white;
+  text-align: left;
 }
 
-.
+.course-content h2 {
+  font-size: 1.2rem;
+}
 
 .course-content h3 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+  font-weight: 300;
+  font-size: 0.85rem;
 }
 
 
@@ -434,11 +471,12 @@ header .mobile {
   /*box-shadow: 0.5em 0.5em 0.5em #999; */
 }
 
-left-feature-thesis h1 {
+.left-feature-thesis h1 {
   font-size: 2rem;
   line-height: 1;
   padding-top: 1.5rem;
   padding-bottom: 0.5rem;
+  font-weight: bold;
 }
 
 .left-feature-thesis {
@@ -456,6 +494,8 @@ left-feature-thesis h1 {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   .left-feature-thesis {
@@ -476,13 +516,18 @@ left-feature-thesis h1 {
 /* Footer Section */
 
 footer {
-  background-color: #9b9b9b;
+  background-color: white;
   padding: 1rem 1.5rem;
+  max-width: 100%;
+  margin: auto;
+  position: relative;
+  top: 4rem;
 }
 
 footer .footer-content {
-  color: white;
+  color: black;
   display: flex;
+  align-items: center;
   font-size: .75rem;
 }
 
@@ -495,7 +540,7 @@ footer li {
 }
 
 footer .copyright {
-  flex-grow: 1;
+ flex-grow: 1;
 }
 
 @media only screen and (max-width: 760px) {
@@ -505,10 +550,12 @@ footer .copyright {
 
   footer {
     background-color: white;
+
   }
 
   footer .footer-content {
     color: black;
+
   }
 
 }
