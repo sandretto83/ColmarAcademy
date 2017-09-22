@@ -38,7 +38,7 @@ nav {
   justify-content: space-between;
   height: 4rem;
   max-width: 1080px;
-  
+
 }
 
 nav .logo {
@@ -71,11 +71,22 @@ header nav ul {
 
 nav li a {
   padding-left: 1rem;
-  font-size: 1.25rem;
+  font-size: 1.2rem;
+  font-weight: 300;
 }
 
 header .mobile {
   display: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 1079px){
+  nav li a {
+    font-size: 1rem;
+  }
 }
 
 @media only screen and (max-width: 760px) {
@@ -142,6 +153,7 @@ header .mobile {
 
   margin-top: 2rem;
   margin-bottom: 2rem;
+  margin-right: 1.5rem;
   align-items: center;
   display: flex;
 
@@ -152,9 +164,19 @@ header .mobile {
   padding: 0.5rem 7.25rem;
   background-color: grey;
   text-align: center;
-  color: white;
+
   font-size: 1.2rem;
 }
+
+.button a {
+  color: white;
+}
+
+.button:hover {
+  /*background-color: black;*/
+  box-shadow: 0.25em 0.25em 0.25em #999;
+}
+
 
 .content {
   margin: auto;
@@ -171,6 +193,22 @@ header .mobile {
 .content span {
   font-size: 1.2rem;
   line-height: 1;
+}
+
+@media only screen and (max-width: 1079px) {
+  .content h1 {
+    font-size: 2rem;
+  }
+.content span {
+  font-size: 1rem;
+}
+.content {
+  width: 18rem;
+}
+.button {
+  font-size: 1rem;
+  padding: 0.5rem 6rem;
+}
 }
 
 @media only screen and (max-width: 760px) {
@@ -269,13 +307,15 @@ header .mobile {
 }
 
 .description {
-  width: 65%;
+
 }
 
 .description {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 65%;
+  padding-right: 1.5rem;
 }
 
 .description h2 {
@@ -541,6 +581,10 @@ footer li {
 
 footer .copyright {
  flex-grow: 1;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
 }
 
 @media only screen and (max-width: 760px) {
