@@ -1,6 +1,6 @@
 /* General Styles */
 html {
-  font-family: sans-serif;
+  font-family: 'Roboto', Arial, sans-serif;
   font-size: 16px;
 }
 
@@ -8,7 +8,9 @@ body {
   line-height: 1.4rem;
   margin: 0 auto;
   max-width: 1080px;
-
+  border-left: 1px solid rgba(0,0,0,0.3);
+  border-right: 1px solid rgba(0,0,0,0.3);
+  border-bottom: 1px solid rgba(0,0,0,0.3);
 }
 
 .flex-container {
@@ -26,8 +28,8 @@ h1 {
 header {
   position: fixed;
   z-index: 100;
-  width: 100%;
-  border-bottom: 1px solid black;
+  width: 1080px;
+  box-shadow: 0 0 0.5rem rgba(0,0,0,0.3);
   background-color: white;
 }
 
@@ -71,7 +73,7 @@ header nav ul {
 
 nav li a {
   padding-left: 1rem;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 300;
 }
 
@@ -127,17 +129,14 @@ nav a:hover {
 .main-container {
   max-width: 1080px;
   margin: auto;
-  position: relative;
-  top: 4rem;
+  padding-top: 4rem;
 
 }
 
 .sign-up {
   display: flex;
   justify-content:flex-start;
-  background-color: lightgrey;
-
-
+  background-color: #f8f9fb;
 }
 
 .banner {
@@ -247,6 +246,7 @@ nav a:hover {
 .features-section {
   display: flex;
   justify-content: flex-start;
+
 }
 
 .left-feature {
@@ -261,6 +261,7 @@ nav a:hover {
   padding-top: 2rem;
   padding-bottom: 1.5rem;
   font-weight: bold;
+
 }
 
 .left-feature img {
@@ -280,7 +281,7 @@ nav a:hover {
 }
 
 #guest {
-  background-color: lightgrey;
+  background-color: #f8f9fb;
 }
 
 .left-feature .source {
@@ -387,8 +388,9 @@ nav a:hover {
 /* Course Section */
 
 .course-catalogue {
-  background-color: lightgrey;
+  background-color: #f8f9fb;
   text-align: center;
+
 }
 
 .course-catalogue h1 {
@@ -556,12 +558,13 @@ nav a:hover {
 /* Footer Section */
 
 footer {
-  background-color: white;
+  background-color: #f8f9fb;
   padding: 1rem 1.5rem;
   max-width: 100%;
   margin: auto;
-  position: relative;
-  top: 4rem;
+
+
+
 }
 
 footer .footer-content {
@@ -593,7 +596,7 @@ footer .copyright {
   }
 
   footer {
-    background-color: white;
+    background-color: #f8f9fb;
 
   }
 
