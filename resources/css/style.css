@@ -13,61 +13,57 @@ body {
   border-bottom: 1px solid rgba(0,0,0,0.3);
 }
 
-.flex-container {
-  width: 960px;
-  margin: auto;
-  border: 1px solid lightgrey;
-}
+
 
 h1 {
   font-size: 2rem;
-
 }
 
 /* Header Section */
 header {
   position: fixed;
   z-index: 100;
-  width: 1080px;
-  box-shadow: 0 0 0.5rem rgba(0,0,0,0.3);
-  background-color: white;
+  width: 100%;
+
+
 }
 
-nav {
-  background-color: white;
+.content-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 4rem;
   max-width: 1080px;
-
+  background-color: white;
+  height: 4rem;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
 }
 
-nav .logo {
+.logo {
   display: flex;
   align-items: center;
   font-size: 1.5rem;
   font-weight: bold;
+
+
 }
 
-nav .logo .academy {
+.logo .academy {
   color: grey;
   font-weight: normal;
 }
 
-nav img {
+.logo img {
   height: 3.5rem;
   margin-left: 1.5rem;
 }
 
 .menu {
+  margin-right: 1.5rem;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-right: 1.5rem;
+
 }
 
-header nav ul {
+.content-header .menu ul {
   display: flex;
 }
 
@@ -86,18 +82,22 @@ nav a:hover {
 }
 
 @media only screen and (max-width: 1079px){
-  nav li a {
+  .menu li a {
     font-size: 1rem;
   }
 }
 
 @media only screen and (max-width: 760px) {
-  header .container {
+  header .menu {
+    display: none;
+  }
+
+  header .logo {
     display: none;
   }
 
 
-  header .mobile {
+  header .content-header .mobile {
     width: 100%;
     background-color: white;
     display: flex;
@@ -105,18 +105,18 @@ nav a:hover {
     justify-content: space-between;
     height: 4rem;
   }
-  header .mobile ul {
+  header .content-header .mobile ul {
     width: 100%;
     justify-content: space-around;
     align-items: center;
-
+    display: flex;
   }
 
-  header .mobile ul li {
+  header .content-header .mobile ul li {
     padding: 0;
   }
 
-  header .mobile img {
+  header .content-header .mobile img {
     height: 2.5rem;
     padding-top: 0.5rem;
   }
